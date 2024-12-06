@@ -1,6 +1,0 @@
-frontend/
-.git
-.gitignore
-*.pyc
-__pycache__
-.env 

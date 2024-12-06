@@ -4,15 +4,15 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 import os
 import urllib.parse
-# Load environment variables
+
 load_dotenv()
 
 # Get database credentials from environment variables
 POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-POSTGRES_DB = os.getenv("POSTGRES_DB", "railway")
-POSTGRES_HOST = os.getenv("PGHOST")
-POSTGRES_PORT = os.getenv("PGPORT", "5432")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "Sato@010801")
+POSTGRES_DB = os.getenv("POSTGRES_DB", "laptop_db")
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
 
 # URL-encode the username and password
 POSTGRES_USER_ENC = urllib.parse.quote_plus(POSTGRES_USER)
